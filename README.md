@@ -9,3 +9,5 @@ TIA: 32110901
 
 NOME: HENRIQUE MACHADO CALDERON
 TIA: 32130813
+
+Para rodar: -gcc -pthread -o projetoMain.c projetoJantarFilosofo.c
