@@ -71,12 +71,12 @@ void pegaGarfo(int filosofoID) { // Função de pegar o garfo
   sleep(1);  // Espera 1 segundo para ser executado
 }
 
-void verificacao(int filosofoID) {  // Verificacao 
-  if (estado[filosofoID] == FOME     // Entra na condicao caso o filosofo sinta fome 
+void verificacao(int filosofoID) {  // Verificando
+  if (estado[filosofoID] == FOME     // Caso o filosofo sinta fome, entra na condicao
     && estado[ESQUERDA] != COMENDO  // e o filósofo a sua esquerda  
     && estado[DIREITA] != COMENDO)   // e o filosofo a sua direita nao estejam comendo 
   { 
-    estado[filosofoID] = COMENDO; // Caso entre altera o estado do filosofo para Comendo
+    estado[filosofoID] = COMENDO; // Caso entre, altera o estado do filosofo para Comendo
     sleep(2);  // Espera 2 segundos para ser executado
     printf("O %dº Filósofo pegou os garfos %d e %d \n", filosofoID + 1, ESQUERDA + 1, filosofoID + 1);
     printf("O %dº Filósofo estava com fome e agora está comendo...\n", filosofoID + 1); 
